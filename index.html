@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio JJBD | Productor Multimedia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <header class="top-bar">
+    <div class="logo">JJ</div>
+    <div class="header-info">
+      <span>Productor multimedia</span>
+      <button class="btn-info">Información</button>
+    </div>
+  </header>
+
+  <div class="app-layout">
+    
+    <aside class="sidebar">
+      <div class="sidebar-content">
+        <p class="sidebar-label">BIENVENIDO</p>
+        <nav class="nav-menu">
+          <!-- Se añadió la pestaña de Inicio -->
+          <a href="#inicio" class="nav-item active"><span class="nav-num">00</span> Inicio</a>
+          <a href="#animacion" class="nav-item"><span class="nav-num">01</span> Animación</a>
+          <a href="#branding" class="nav-item"><span class="nav-num">02</span> Branding</a>
+          <a href="#flyers" class="nav-item"><span class="nav-num">03</span> Flyers</a>
+          <a href="#fotografia" class="nav-item"><span class="nav-num">04</span> Fotografía</a>
+          <a href="#motion" class="nav-item"><span class="nav-num">05</span> Motion Graphics</a>
+          <a href="#uxui" class="nav-item"><span class="nav-num">06</span> UX & UI</a>
+        </nav>
+      </div>
+    </aside>
+
+    <main class="content-area" id="scroll-container">
+
+      <!-- 00. HERO SECTION / INICIO -->
+      <section id="inicio" class="hero-section">
+        <div class="liquid-bg"><canvas class="fluid-canvas"></canvas></div>
+        <div class="hero-content">
+          <span class="hero-badge">PORTAFOLIO 2026</span>
+          <h1 class="hero-title">¡Bienvenidos a<br>mi portafolio!</h1>
+          <p class="hero-subtitle">Soy Juan Jose, productor multimedia de Ibagué, Colombia. Combino creatividad visual, estética y estrategia para dar vida a proyectos únicos.</p>
+          <div class="hero-actions">
+            <button class="btn-primary" onclick="document.getElementById('animacion').scrollIntoView({behavior: 'smooth'})">Explorar Proyectos ↓</button>
+            <button class="btn-secondary" id="btn-hero-perfil">Sobre mí</button>
+          </div>
+        </div>
+      </section>
+      
+      <!-- 01. Animación -->
+      <section id="animacion" class="section-card cream-bg">
+        <div class="liquid-bg"><canvas class="fluid-canvas"></canvas></div>
+        <div class="section-header">
+          <div class="header-text">
+            <span class="section-num">01</span>
+            <h1>Animación</h1>
+            <p>Ritmo, forma y secuencia para ideas que necesitan moverse.</p>
+          </div>
+          <div class="header-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor"><circle cx="16" cy="16" r="10"/><circle cx="26" cy="24" r="8"/><circle cx="28" cy="14" r="4"/></svg>
+          </div>
+        </div>
+        <div class="carousel-container">
+          <article class="editorial-card">
+            <video src="assets/animacion/video1.mp4" loop muted="muted" playsinline preload="auto"></video>
+            <div class="video-overlay">
+              <div class="play-button"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+              <div class="editorial-info">
+                <h3>Personaje 2d</h3>
+                <div class="editorial-footer"><span class="tag"><span class="dot">●</span> ANIMACIÓN 2D</span><span class="year">2025</span></div>
+              </div>
+            </div>
+          </article>
+          <article class="editorial-card">
+            <video src="assets/animacion/video2.mp4" loop muted="muted" playsinline preload="auto"></video>
+            <div class="video-overlay">
+              <div class="play-button"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+              <div class="editorial-info">
+                <h3>Stop motion</h3>
+                <div class="editorial-footer"><span class="tag"><span class="dot">●</span> FRAME BY FRAME</span><span class="year">2026</span></div>
+              </div>
+            </div>
+          </article>
+          <article class="editorial-card">
+            <video src="assets/animacion/video3.mp4" loop muted="muted" playsinline preload="auto"></video>
+            <div class="video-overlay">
+              <div class="play-button"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
+              <div class="editorial-info">
+                <h3>Marioneta</h3>
+                <div class="editorial-footer"><span class="tag"><span class="dot">●</span> MOTION COMIC</span><span class="year">2026</span></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 02. Branding -->
+      <section id="branding" class="section-card cream-bg">
+        <div class="liquid-bg"><canvas class="fluid-canvas"></canvas></div>
+        <div class="section-header">
+          <div class="header-text">
+            <span class="section-num">02</span>
+            <h1>Branding</h1>
+            <p>Identidad visual que comunica esencia y construye memoria.</p>
+          </div>
+          <div class="header-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor"><polygon points="20,10 30,30 10,30"/><polygon points="20,5 35,35 5,35" stroke-dasharray="2 2"/><circle cx="20" cy="23" r="2" fill="currentColor"/></svg>
+          </div>
+        </div>
+        
+        <div class="carousel-container center-single">
+          <div class="folder-container card-orange open-pdf" data-pdf="assets/branding/proyecto.pdf" data-title="Manual de Marca">
+            <div class="folder-tab"><span class="dots">•••</span><span class="folder-icon">📄 PDF</span></div>
+            <article class="folder-body">
+              <div class="folder-content">
+                <h3>FALCON ENTERTAINMENT</h3>
+                <p>Narrativa de marca e identidad Falcon Entertainment (Click para leer)</p>
+              </div>
+              <div class="folder-bottom">
+                <div class="branding-graphic"><div class="floor-line"></div></div>
+                <div class="pdf-hint">Abrir Documento ↗</div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 03. Flyers -->
+      <section id="flyers" class="section-card cream-bg">
+        <div class="liquid-bg"><canvas class="fluid-canvas"></canvas></div>
+        <div class="section-header">
+          <div class="header-text">
+            <span class="section-num">03</span>
+            <h1>Flyers</h1>
+            <p>Composición tipográfica para comunicar en un instante.</p>
+          </div>
+          <div class="header-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor"><rect x="5" y="10" width="30" height="4" fill="currentColor"/><rect x="5" y="18" width="20" height="2"/><rect x="5" y="24" width="25" height="2"/><rect x="5" y="32" width="10" height="4" rx="2"/></svg>
+          </div>
+        </div>
+        
+        <div class="carousel">
+          <div class="wrap">
+            <ul>
+              <li><img src="assets/flyers/flyer1.jpg" alt="Flyer 1"></li>
+              <li><img src="assets/flyers/flyer2.jpg" alt="Flyer 2"></li>
+              <li><img src="assets/flyers/flyer3.jpg" alt="Flyer 3"></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 04. Fotografía -->
+      <section id="fotografia" class="section-card cream-bg">
+        <div class="liquid-bg"><canvas class="fluid-canvas"></canvas></div>
+        <div class="section-header">
+          <div class="header-text">
+            <span class="section-num">04</span>
+            <h1>Fotografía</h1>
+            <p>La imagen quieta que captura el movimiento del tiempo.</p>
+          </div>
+          <div class="header-icon">
+             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor"><circle cx="20" cy="20" r="15"/><circle cx="20" cy="20" r="8"/><circle cx="20" cy="20" r="2" fill="currentColor"/><line x1="20" y1="2" x2="20" y2="8"/><line x1="20" y1="32" x2="20" y2="38"/><line x1="2" y1="20" x2="8" y2="20"/><line x1="32" y1="20" x2="38" y2="20"/></svg>
+          </div>
+        </div>
+
+        <div class="carousel">
+          <div class="wrap">
+            <ul>
+              <li><img src="assets/fotografia/foto1.jpg" alt="Foto 1"></li>
+              <li><img src="assets/fotografia/foto2.jpg" alt="Foto 2"></li>
+              <li><img src="assets/fotografia/foto3.jpg" alt="Foto 3"></li>
+              <li><img src="assets/fotografia/foto4.jpg" alt="Foto 4"></li>
+              <li><img src="assets/fotografia/foto5.jpg" alt="Foto 5"></li>
+              <li><img src="assets/fotografia/foto6.jpg" alt="Foto 6"></li>
+              <li><img src="assets/fotografia/foto7.jpg" alt="Foto 7"></li>
+              <li><img src="assets/fotografia/foto8.jpg" alt="Foto 8"></li>
+              <li><img src="assets/fotografia/foto9.jpg" alt="Foto 9"></li>
+              <li><img src="assets/fotografia/foto10.jpg" alt="Foto 10"></li>
+              <li><img src="assets/fotografia/foto11.jpg" alt="Foto 11"></li>
+              <li><img src="assets/fotografia/foto12.jpg" alt="Foto 12"></li>
+              <li><img src="assets/fotografia/foto13.jpg" alt="Foto 13"></li>
+              <li><img src="assets/fotografia/foto14.jpg" alt="Foto 14"></li>
+              <li><img src="assets/fotografia/foto15.jpg" alt="Foto 15"></li>
+              <li><img src="assets/fotografia/foto16.jpg" alt="Foto 16"></li>
+              <li><img src="assets/fotografia/foto17.jpg" alt="Foto 17"></li>
+              <li><img src="assets/fotografia/foto18.jpg" alt="Foto 18"></li>
+              <li><img src="assets/fotografia/foto19.jpg" alt="Foto 19"></li>
+              <li><img src="assets/fotografia/foto20.jpg" alt="Foto 20"></li>
+              <li><img src="assets/fotografia/foto21.jpg" alt="Foto 21"></li>
+              <li><img src="assets/fotografia/foto22.jpg" alt="Foto 22"></li>
+              <li><img src="assets/fotografia/foto23.jpg" alt="Foto 23"></li>
+              <li><img src="assets/fotografia/foto24.jpg" alt="Foto 24"></li>
+              <li><img src="assets/fotografia/foto25.jpg" alt="Foto 25"></li>
+              <li><img src="assets/fotografia/foto26.jpg" alt="Foto 26"></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 05. Motion Graphics -->
+      <section id="motion" class="section-card cream-bg">
+        <div class="liquid-bg"><canvas class="fluid-canvas"></canvas></div>
+        <div class="section-header">
+          <div class="header-text">
+            <span class="section-num">05</span>
+            <h1>Motion Graphics</h1>
+            <p>Animación en movimiento para narrativas visuales.</p>
+          </div>
+          <div class="header-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor"><path d="M5,30 Q20,10 35,30"/><circle cx="10" cy="25" r="2" fill="currentColor"/><circle cx="20" cy="15" r="2" fill="currentColor"/><circle cx="30" cy="25" r="2" fill="currentColor"/></svg>
+          </div>
+        </div>
+        
+        <div class="carousel-container center-single">
+          <article class="editorial-card">
+            <video src="assets/motion/proyecto.mp4" loop muted="muted" playsinline preload="auto"></video>
+            <div class="video-overlay">
+              <div class="play-button">
+                 <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <div class="editorial-info">
+                <h3>FALCON ENTERTAINMENT</h3>
+                <div class="editorial-footer">
+                  <span class="tag"><span class="dot">●</span> MOTION GRAPHICS</span>
+                  <span class="year">2026</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 06. UX & UI -->
+      <section id="uxui" class="section-card cream-bg">
+        <div class="liquid-bg"><canvas class="fluid-canvas"></canvas></div>
+        <div class="section-header">
+          <div class="header-text">
+            <span class="section-num">06</span>
+            <h1>UX & UI</h1>
+            <p>Experiencias digitales con propósito, claridad y detalle.</p>
+          </div>
+          <div class="header-icon">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor"><rect x="4" y="8" width="32" height="24" rx="2"/><line x1="4" y1="14" x2="36" y2="14"/><rect x="8" y="18" width="12" height="10"/><rect x="22" y="18" width="10" height="4"/><rect x="22" y="24" width="10" height="4"/></svg>
+          </div>
+        </div>
+        <div class="carousel-container">
+          
+          <div class="folder-container card-blue locked-folder">
+            <div class="folder-tab"><span class="dots">•••</span><span class="folder-icon">🔒</span></div>
+            <article class="folder-body">
+              <div class="folder-content">
+                <h3>App Insumos Médicos</h3>
+                <p>Gestión de pedidos e inventario</p>
+              </div>
+              <div class="folder-bottom">
+                <div class="ux-graphic"><div class="ux-box main-box"></div><div class="ux-box side-box"></div></div>
+                <div class="locked-overlay">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2" ry="2"></rect><path d="M8 11V7a4 4 0 1 1 8 0v4"></path></svg>
+                  <span>PRÓXIMAMENTE</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          
+          <div class="folder-container card-blue locked-folder">
+            <div class="folder-tab"><span class="dots">•••</span><span class="folder-icon">🔒</span></div>
+            <article class="folder-body">
+              <div class="folder-content">
+                <h3>Portafolio JJBD</h3>
+                <p>Diseño responsivo y componentes</p>
+              </div>
+              <div class="folder-bottom">
+                <div class="ux-graphic"><div class="ux-box main-box"></div><div class="ux-box side-box"></div></div>
+                <div class="locked-overlay">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2" ry="2"></rect><path d="M8 11V7a4 4 0 1 1 8 0v4"></path></svg>
+                  <span>PRÓXIMAMENTE</span>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="folder-container card-blue locked-folder">
+            <div class="folder-tab"><span class="dots">•••</span><span class="folder-icon">🔒</span></div>
+            <article class="folder-body">
+              <div class="folder-content">
+                <h3>Solo Travel App</h3>
+                <p>Rutas para viajeros en solitario por Sudamérica</p>
+              </div>
+              <div class="folder-bottom">
+                <div class="ux-graphic"><div class="ux-box main-box"></div><div class="ux-box side-box"></div></div>
+                <div class="locked-overlay">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2" ry="2"></rect><path d="M8 11V7a4 4 0 1 1 8 0v4"></path></svg>
+                  <span>PRÓXIMAMENTE</span>
+                </div>
+              </div>
+            </article>
+          </div>
+          
+        </div>
+      </section>
+      
+      <footer class="footer">
+        <p>Juan Jose Barreto Diaz / juanjo.d420@gmail.com / 2026 / Colombia</p>
+        <div class="social-links"><a href="#">IG</a> <a href="#">IN</a> <a href="#">Be</a></div>
+      </footer>
+    </main>
+  </div>
+
+  <!-- PANTALLA SUPERPUESTA PARA VISOR DE PDF -->
+  <div id="pdf-modal" class="pdf-modal hidden">
+    <header class="top-bar perfil-top-bar">
+      <div class="perfil-header-left">
+        <div class="logo">JJ</div>
+        <button id="close-pdf" class="btn-volver">← VOLVER AL PORTAFOLIO</button>
+      </div>
+      <div class="header-info">
+        <span id="modal-pdf-title" class="info-mono">Cargando documento...</span>
+      </div>
+    </header>
+    <div class="pdf-modal-body">
+      <iframe id="pdf-frame" src="" frameborder="0"></iframe>
+    </div>
+  </div>
+
+  <!-- PANTALLA SUPERPUESTA DE PERFIL -->
+  <div id="perfil-overlay" class="perfil-overlay hidden">
+    
+    <header class="top-bar perfil-top-bar">
+      <div class="perfil-header-left">
+        <div class="logo">JJ</div>
+        <button id="btn-volver-perfil" class="btn-volver">← VOLVER A PROYECTOS</button>
+      </div>
+      <div class="header-info">
+        <span class="info-mono">Información</span>
+      </div>
+    </header>
+
+    <div class="perfil-layout">
+      
+      <aside class="perfil-sidebar">
+        <div class="foto-caja">
+          <span class="foto-label-top">01 / FOTO</span>
+          <img src="assets/perfil/mifoto.jpg" alt="Foto de perfil de Juan José" class="foto-perfil-img">
+        </div>
+      </aside>
+
+      <main class="perfil-contenido">
+        <p class="perfil-etiqueta">PERFIL / 2026</p>
+        <h1 class="perfil-titulo">Ideas<br>en movimiento.</h1>
+        <p class="perfil-subtitulo">Diseño con intención, tecnología con propósito.</p>
+
+        <div class="info-bloque">
+          <h3><span class="num">01 /</span> PRESENTACIÓN</h3>
+          <p>Soy Juan Jose Barreto Diaz, diseñador y productor multimedia de Ibagué, Colombia. Me apasiona crear desde identidades visuales y contenido audiovisual, hasta experiencias digitales atractivas y fáciles de usar. Mi objetivo es unir el buen diseño con la tecnología para dar vida a proyectos que comuniquen tu mensaje de forma clara y directa.</p>
+        </div>
+
+        <div class="info-bloque">
+          <h3><span class="num">02 /</span> EXPERIENCIA</h3>
+          <p>He trabajado en diversos proyectos que abarcan diseño UX/UI, animación, creación de marcas (branding), páginas web y fotografía. Me especializo en ayudar a mis clientes a destacar en el mundo digital, construyendo identidades corporativas sólidas y diseñando plataformas que sean agradables e intuitivas para los usuarios.</p>
+        </div>
+
+        <div class="info-bloque">
+          <h3><span class="num">03 /</span> EDUCACIÓN</h3>
+          <p>Producción de Multimedia — SENA, Colombia, Certificado Profesional en Diseño UX — Google (Coursera). Formación y practica continua: Me mantengo siempre actualizado en desarrollo web front-end y creación de guiones para ofrecer soluciones modernas e innovadoras.</p>
+        </div>
+
+        <div class="info-bloque">
+          <h3><span class="num">04 /</span> HERRAMIENTAS</h3>
+          <p>Suite completa Adobe Creative Cloud, Figma para diseño de interfaces y sistemas de diseño, DaVinci Resolve para edición y corrección de color, me enfoco en ser organizado, cuidar cada detalle técnico y cumplir puntualmente con las entregas para asegurar la máxima calidad en cada proyecto.</p>
+        </div> 
+
+        <div class="skills-section">
+          <h4 class="skills-title">SKILLS</h4>
+          <div class="skills-grid">
+            <div class="skill-item"><span class="num">01 &rarr;</span> Adobe Illustrator</div>
+            <div class="skill-item"><span class="num">02 &rarr;</span> Adobe Photoshop</div>
+            <div class="skill-item"><span class="num">03 &rarr;</span> Adobe Lightroom</div>
+            <div class="skill-item"><span class="num">04 &rarr;</span> Adobe After Effects</div>
+            <div class="skill-item"><span class="num">05 &rarr;</span> Adobe Premiere Pro</div>
+            <div class="skill-item"><span class="num">06 &rarr;</span> Adobe Animate</div>
+            <div class="skill-item"><span class="num">07 &rarr;</span> Figma</div>
+            <div class="skill-item"><span class="num">08 &rarr;</span> DaVinci Resolve</div>
+          </div>
+        </div>
+
+        <div class="perfil-footer-blanco">
+          <p>Juan Jose Barreto Diaz / juanjo.d420@gmail.com / 2026 / Colombia</p>
+          <div class="social-links-dark">
+             <a href="#">IG</a>
+             <a href="#">IN</a>
+             <a href="#">Be</a>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  
+  <script src="main.js"></script>
+</body>
+</html>
